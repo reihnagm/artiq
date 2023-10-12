@@ -1,0 +1,18 @@
+CRITICAL - 2023-06-24 14:07:39 --> Trait 'App\Controllers\Home\ResponseTrait' not found
+in APPPATH/Controllers/Home/Home.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-06-24 14:07:40 --> Trait 'App\Controllers\Home\ResponseTrait' not found
+in APPPATH/Controllers/Home/Home.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-06-24 14:07:46 --> Trait 'App\Controllers\Home\ResponseTrait' not found
+in APPPATH/Controllers/Home/Home.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-06-24 14:07:46 --> Trait 'App\Controllers\Home\ResponseTrait' not found
+in APPPATH/Controllers/Home/Home.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-06-24 14:07:47 --> Trait 'App\Controllers\Home\ResponseTrait' not found
+in APPPATH/Controllers/Home/Home.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-06-24 14:07:47 --> Trait 'App\Controllers\Home\ResponseTrait' not found
+in APPPATH/Controllers/Home/Home.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()

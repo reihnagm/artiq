@@ -1,0 +1,22 @@
+CRITICAL - 2023-06-09 07:07:44 --> Argument 2 passed to view() must be of the type array, string given, called in /Applications/MAMP/htdocs/albarokah-v2/app/Views/pembiayaan/index.php on line 1
+in SYSTEMPATH/Common.php on line 1172.
+ 1 APPPATH/Views/pembiayaan/index.php(1): view('layouts/head', 'Bank Albarokah | Pembiayaan')
+ 2 SYSTEMPATH/View/View.php(213): include('/Applications/MAMP/htdocs/albarokah-v2/app/Views/pembiayaan/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('pembiayaan/index', [], true)
+ 5 APPPATH/Controllers/Home/Home.php(18): view('pembiayaan/index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home\Home->pembiayaan()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(34): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-09 07:08:10 --> Argument 2 passed to view() must be of the type array, string given, called in /Applications/MAMP/htdocs/albarokah-v2/app/Views/pembiayaan/index.php on line 1
+in SYSTEMPATH/Common.php on line 1172.
+ 1 APPPATH/Views/pembiayaan/index.php(1): view('layouts/head', 'Bank Albarokah | Pembiayaan')
+ 2 SYSTEMPATH/View/View.php(213): include('/Applications/MAMP/htdocs/albarokah-v2/app/Views/pembiayaan/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('pembiayaan/index', [], true)
+ 5 APPPATH/Controllers/Home/Home.php(18): view('pembiayaan/index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home\Home->pembiayaan()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(34): CodeIgniter\CodeIgniter->run()

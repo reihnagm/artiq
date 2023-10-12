@@ -1,0 +1,421 @@
+CRITICAL - 2023-06-29 08:43:49 --> Invalid file: "cms/layouts/nav.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('cms/layouts/nav.php')
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('cms/layouts/nav', [], true)
+ 3 APPPATH/Views/cms/index.php(2): view('cms/layouts/nav')
+ 4 SYSTEMPATH/View/View.php(213): include('/Applications/MAMP/htdocs/albarokah-v2/app/Views/cms/index.php')
+ 5 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('cms/index', [], true)
+ 7 APPPATH/Controllers/Home/Home.php(43): view('cms/index')
+ 8 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home\Home->cms()
+ 9 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\Home))
+10 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(34): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-29 08:47:37 --> Invalid file: "cms/layouts/nav.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('cms/layouts/nav.php')
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('cms/layouts/nav', [], true)
+ 3 APPPATH/Views/cms/index.php(2): view('cms/layouts/nav')
+ 4 SYSTEMPATH/View/View.php(213): include('/Applications/MAMP/htdocs/albarokah-v2/app/Views/cms/index.php')
+ 5 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('cms/index', [], true)
+ 7 APPPATH/Controllers/Home/Home.php(43): view('cms/index')
+ 8 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home\Home->cms()
+ 9 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\Home))
+10 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(34): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-29 13:53:27 --> Invalid file: "cms/deposito-mutlaqah-mudharabah.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('cms/deposito-mutlaqah-mudharabah.php')
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('cms/deposito-mutlaqah-mudharabah', [], true)
+ 3 APPPATH/Controllers/Home/Home.php(55): view('cms/deposito-mutlaqah-mudharabah')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home\Home->depositoMuqayyadahMudharabah()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(34): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-29 13:53:50 --> Invalid file: "cms/deposito-mutlaqah-mudharabah.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('cms/deposito-mutlaqah-mudharabah.php')
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('cms/deposito-mutlaqah-mudharabah', [], true)
+ 3 APPPATH/Controllers/Home/Home.php(55): view('cms/deposito-mutlaqah-mudharabah')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home\Home->depositoMuqayyadahMudharabah()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(34): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-29 14:12:24 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'albarokah' in /Applications/MAMP/htdocs/albarokah-v2/system/Database/MySQLi/Connection.php:174
+Stack trace:
+#0 /Applications/MAMP/htdocs/albarokah-v2/system/Database/MySQLi/Connection.php(174): mysqli->real_connect('localhost', 'root', 'root', 'albarokah', 3306, '', 0)
+#1 /Applications/MAMP/htdocs/albarokah-v2/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/MAMP/htdocs/albarokah-v2/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/MAMP/htdocs/albarokah-v2/app/Controllers/Home/Home.php(36): CodeIgniter\Database\BaseConnection->query('INSERT INTO dep...')
+#4 /Applications/MAMP/htdocs/albarokah-v2/system/CodeIgniter.php(934): App\Controllers\Home\Home->register()
+#5 /Applications/MAMP/htdocs/albarokah-v2/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\Home))
+#6 /Applications/MAMP/htdocs/albarokah-v2/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/albarokah-v2/index.php(34): CodeIgniter\CodeIgniter->run()
+#8 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'albarokah' in /Applications/MAMP/htdocs/albarokah-v2/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /Applications/MAMP/htdocs/albarokah-v2/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/MAMP/htdocs/albarokah-v2/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/MAMP/htdocs/albarokah-v2/app/Controllers/Home/Home.php(36): CodeIgniter\Database\BaseConnection->query('INSERT INTO dep...')
+#3 /Applications/MAMP/htdocs/albarokah-v2/system/CodeIgniter.php(934): App\Controllers\Home\Home->register()
+#4 /Applications/MAMP/htdocs/albarokah-v2/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\Home))
+#5 /Applications/MAMP/htdocs/albarokah-v2/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/albarokah-v2/index.php(34): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-06-29 14:12:24 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'albarokah'
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Controllers/Home/Home.php(36): CodeIgniter\Database\BaseConnection->query('INSERT INTO deposito_muqayyadah_mudharabahs (proyek, name, phone, email) VALUES(\'Reihan Agam\', \'089670558381\', \'reihanagam7@gmail.com\') ')
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home\Home->register()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(34): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-29 14:12:33 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'albarokah' in /Applications/MAMP/htdocs/albarokah-v2/system/Database/MySQLi/Connection.php:174
+Stack trace:
+#0 /Applications/MAMP/htdocs/albarokah-v2/system/Database/MySQLi/Connection.php(174): mysqli->real_connect('localhost', 'root', 'root', 'albarokah', 3306, '', 0)
+#1 /Applications/MAMP/htdocs/albarokah-v2/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/MAMP/htdocs/albarokah-v2/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/MAMP/htdocs/albarokah-v2/app/Controllers/Home/Home.php(36): CodeIgniter\Database\BaseConnection->query('INSERT INTO dep...')
+#4 /Applications/MAMP/htdocs/albarokah-v2/system/CodeIgniter.php(934): App\Controllers\Home\Home->register()
+#5 /Applications/MAMP/htdocs/albarokah-v2/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\Home))
+#6 /Applications/MAMP/htdocs/albarokah-v2/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/albarokah-v2/index.php(34): CodeIgniter\CodeIgniter->run()
+#8 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'albarokah' in /Applications/MAMP/htdocs/albarokah-v2/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /Applications/MAMP/htdocs/albarokah-v2/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/MAMP/htdocs/albarokah-v2/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/MAMP/htdocs/albarokah-v2/app/Controllers/Home/Home.php(36): CodeIgniter\Database\BaseConnection->query('INSERT INTO dep...')
+#3 /Applications/MAMP/htdocs/albarokah-v2/system/CodeIgniter.php(934): App\Controllers\Home\Home->register()
+#4 /Applications/MAMP/htdocs/albarokah-v2/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\Home))
+#5 /Applications/MAMP/htdocs/albarokah-v2/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/albarokah-v2/index.php(34): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-06-29 14:12:33 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'albarokah'
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Controllers/Home/Home.php(36): CodeIgniter\Database\BaseConnection->query('INSERT INTO deposito_muqayyadah_mudharabahs (proyek, name, phone, email) VALUES(\'Reihan Agam\', \'089670558381\', \'reihanagam7@gmail.com\') ')
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home\Home->register()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(34): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-29 14:12:33 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'albarokah' in /Applications/MAMP/htdocs/albarokah-v2/system/Database/MySQLi/Connection.php:174
+Stack trace:
+#0 /Applications/MAMP/htdocs/albarokah-v2/system/Database/MySQLi/Connection.php(174): mysqli->real_connect('localhost', 'root', 'root', 'albarokah', 3306, '', 0)
+#1 /Applications/MAMP/htdocs/albarokah-v2/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/MAMP/htdocs/albarokah-v2/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/MAMP/htdocs/albarokah-v2/app/Controllers/Home/Home.php(36): CodeIgniter\Database\BaseConnection->query('INSERT INTO dep...')
+#4 /Applications/MAMP/htdocs/albarokah-v2/system/CodeIgniter.php(934): App\Controllers\Home\Home->register()
+#5 /Applications/MAMP/htdocs/albarokah-v2/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\Home))
+#6 /Applications/MAMP/htdocs/albarokah-v2/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/albarokah-v2/index.php(34): CodeIgniter\CodeIgniter->run()
+#8 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'albarokah' in /Applications/MAMP/htdocs/albarokah-v2/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /Applications/MAMP/htdocs/albarokah-v2/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/MAMP/htdocs/albarokah-v2/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/MAMP/htdocs/albarokah-v2/app/Controllers/Home/Home.php(36): CodeIgniter\Database\BaseConnection->query('INSERT INTO dep...')
+#3 /Applications/MAMP/htdocs/albarokah-v2/system/CodeIgniter.php(934): App\Controllers\Home\Home->register()
+#4 /Applications/MAMP/htdocs/albarokah-v2/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\Home))
+#5 /Applications/MAMP/htdocs/albarokah-v2/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/albarokah-v2/index.php(34): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-06-29 14:12:33 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'albarokah'
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Controllers/Home/Home.php(36): CodeIgniter\Database\BaseConnection->query('INSERT INTO deposito_muqayyadah_mudharabahs (proyek, name, phone, email) VALUES(\'Reihan Agam\', \'089670558381\', \'reihanagam7@gmail.com\') ')
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home\Home->register()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(34): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-29 14:13:19 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /Applications/MAMP/htdocs/albarokah-v2/system/Database/MySQLi/Connection.php:174
+Stack trace:
+#0 /Applications/MAMP/htdocs/albarokah-v2/system/Database/MySQLi/Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'albarokah', 3306, '', 0)
+#1 /Applications/MAMP/htdocs/albarokah-v2/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/MAMP/htdocs/albarokah-v2/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/MAMP/htdocs/albarokah-v2/app/Controllers/Home/Home.php(36): CodeIgniter\Database\BaseConnection->query('INSERT INTO dep...')
+#4 /Applications/MAMP/htdocs/albarokah-v2/system/CodeIgniter.php(934): App\Controllers\Home\Home->register()
+#5 /Applications/MAMP/htdocs/albarokah-v2/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\Home))
+#6 /Applications/MAMP/htdocs/albarokah-v2/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/albarokah-v2/index.php(34): CodeIgniter\CodeIgniter->run()
+#8 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in /Applications/MAMP/htdocs/albarokah-v2/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /Applications/MAMP/htdocs/albarokah-v2/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/MAMP/htdocs/albarokah-v2/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/MAMP/htdocs/albarokah-v2/app/Controllers/Home/Home.php(36): CodeIgniter\Database\BaseConnection->query('INSERT INTO dep...')
+#3 /Applications/MAMP/htdocs/albarokah-v2/system/CodeIgniter.php(934): App\Controllers\Home\Home->register()
+#4 /Applications/MAMP/htdocs/albarokah-v2/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\Home))
+#5 /Applications/MAMP/htdocs/albarokah-v2/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/albarokah-v2/index.php(34): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-06-29 14:13:19 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Controllers/Home/Home.php(36): CodeIgniter\Database\BaseConnection->query('INSERT INTO deposito_muqayyadah_mudharabahs (proyek, name, phone, email) VALUES(\'Reihan Agam\', \'089670558381\', \'reihanagam7@gmail.com\') ')
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home\Home->register()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(34): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-29 14:14:55 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'albarokah' in /Applications/MAMP/htdocs/albarokah-v2/system/Database/MySQLi/Connection.php:174
+Stack trace:
+#0 /Applications/MAMP/htdocs/albarokah-v2/system/Database/MySQLi/Connection.php(174): mysqli->real_connect('localhost', 'root', 'root', 'albarokah', 3306, '', 0)
+#1 /Applications/MAMP/htdocs/albarokah-v2/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/MAMP/htdocs/albarokah-v2/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/MAMP/htdocs/albarokah-v2/app/Controllers/Home/Home.php(36): CodeIgniter\Database\BaseConnection->query('INSERT INTO dep...')
+#4 /Applications/MAMP/htdocs/albarokah-v2/system/CodeIgniter.php(934): App\Controllers\Home\Home->register()
+#5 /Applications/MAMP/htdocs/albarokah-v2/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\Home))
+#6 /Applications/MAMP/htdocs/albarokah-v2/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/albarokah-v2/index.php(34): CodeIgniter\CodeIgniter->run()
+#8 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'albarokah' in /Applications/MAMP/htdocs/albarokah-v2/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /Applications/MAMP/htdocs/albarokah-v2/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/MAMP/htdocs/albarokah-v2/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/MAMP/htdocs/albarokah-v2/app/Controllers/Home/Home.php(36): CodeIgniter\Database\BaseConnection->query('INSERT INTO dep...')
+#3 /Applications/MAMP/htdocs/albarokah-v2/system/CodeIgniter.php(934): App\Controllers\Home\Home->register()
+#4 /Applications/MAMP/htdocs/albarokah-v2/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\Home))
+#5 /Applications/MAMP/htdocs/albarokah-v2/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/albarokah-v2/index.php(34): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-06-29 14:14:55 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'albarokah'
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Controllers/Home/Home.php(36): CodeIgniter\Database\BaseConnection->query('INSERT INTO deposito_muqayyadah_mudharabahs (proyek, name, phone, email) VALUES(\'Reihan Agam\', \'089670558381\', \'reihanagam7@gmail.com\') ')
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home\Home->register()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(34): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-29 14:15:36 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'albarokah' in /Applications/MAMP/htdocs/albarokah-v2/system/Database/MySQLi/Connection.php:174
+Stack trace:
+#0 /Applications/MAMP/htdocs/albarokah-v2/system/Database/MySQLi/Connection.php(174): mysqli->real_connect('localhost', 'root', 'root', 'albarokah', 3306, '', 0)
+#1 /Applications/MAMP/htdocs/albarokah-v2/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/MAMP/htdocs/albarokah-v2/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/MAMP/htdocs/albarokah-v2/app/Controllers/Home/Home.php(36): CodeIgniter\Database\BaseConnection->query('INSERT INTO dep...')
+#4 /Applications/MAMP/htdocs/albarokah-v2/system/CodeIgniter.php(934): App\Controllers\Home\Home->register()
+#5 /Applications/MAMP/htdocs/albarokah-v2/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\Home))
+#6 /Applications/MAMP/htdocs/albarokah-v2/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/albarokah-v2/index.php(34): CodeIgniter\CodeIgniter->run()
+#8 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'albarokah' in /Applications/MAMP/htdocs/albarokah-v2/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /Applications/MAMP/htdocs/albarokah-v2/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/MAMP/htdocs/albarokah-v2/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/MAMP/htdocs/albarokah-v2/app/Controllers/Home/Home.php(36): CodeIgniter\Database\BaseConnection->query('INSERT INTO dep...')
+#3 /Applications/MAMP/htdocs/albarokah-v2/system/CodeIgniter.php(934): App\Controllers\Home\Home->register()
+#4 /Applications/MAMP/htdocs/albarokah-v2/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\Home))
+#5 /Applications/MAMP/htdocs/albarokah-v2/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/albarokah-v2/index.php(34): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-06-29 14:15:36 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'albarokah'
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Controllers/Home/Home.php(36): CodeIgniter\Database\BaseConnection->query('INSERT INTO deposito_muqayyadah_mudharabahs (proyek, name, phone, email) VALUES(\'Reihan Agam\', \'089670558381\', \'reihanagam7@gmail.com\') ')
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home\Home->register()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(34): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-29 14:16:23 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'albarokah' in /Applications/MAMP/htdocs/albarokah-v2/system/Database/MySQLi/Connection.php:174
+Stack trace:
+#0 /Applications/MAMP/htdocs/albarokah-v2/system/Database/MySQLi/Connection.php(174): mysqli->real_connect('localhost', 'root', 'root', 'albarokah', 3306, '', 0)
+#1 /Applications/MAMP/htdocs/albarokah-v2/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/MAMP/htdocs/albarokah-v2/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/MAMP/htdocs/albarokah-v2/app/Controllers/Home/Home.php(36): CodeIgniter\Database\BaseConnection->query('INSERT INTO dep...')
+#4 /Applications/MAMP/htdocs/albarokah-v2/system/CodeIgniter.php(934): App\Controllers\Home\Home->register()
+#5 /Applications/MAMP/htdocs/albarokah-v2/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\Home))
+#6 /Applications/MAMP/htdocs/albarokah-v2/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/albarokah-v2/index.php(34): CodeIgniter\CodeIgniter->run()
+#8 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'albarokah' in /Applications/MAMP/htdocs/albarokah-v2/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /Applications/MAMP/htdocs/albarokah-v2/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/MAMP/htdocs/albarokah-v2/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/MAMP/htdocs/albarokah-v2/app/Controllers/Home/Home.php(36): CodeIgniter\Database\BaseConnection->query('INSERT INTO dep...')
+#3 /Applications/MAMP/htdocs/albarokah-v2/system/CodeIgniter.php(934): App\Controllers\Home\Home->register()
+#4 /Applications/MAMP/htdocs/albarokah-v2/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\Home))
+#5 /Applications/MAMP/htdocs/albarokah-v2/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/albarokah-v2/index.php(34): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-06-29 14:16:23 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'albarokah'
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Controllers/Home/Home.php(36): CodeIgniter\Database\BaseConnection->query('INSERT INTO deposito_muqayyadah_mudharabahs (proyek, name, phone, email) VALUES(\'Reihan Agam\', \'089670558381\', \'reihanagam7@gmail.com\') ')
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home\Home->register()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(34): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-29 14:18:05 --> mysqli_sql_exception: Column count doesn't match value count at row 1 in /Applications/MAMP/htdocs/albarokah-v2/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /Applications/MAMP/htdocs/albarokah-v2/system/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO dep...', 0)
+#1 /Applications/MAMP/htdocs/albarokah-v2/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO dep...')
+#2 /Applications/MAMP/htdocs/albarokah-v2/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO dep...')
+#3 /Applications/MAMP/htdocs/albarokah-v2/app/Controllers/Home/Home.php(36): CodeIgniter\Database\BaseConnection->query('INSERT INTO dep...')
+#4 /Applications/MAMP/htdocs/albarokah-v2/system/CodeIgniter.php(934): App\Controllers\Home\Home->register()
+#5 /Applications/MAMP/htdocs/albarokah-v2/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\Home))
+#6 /Applications/MAMP/htdocs/albarokah-v2/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/albarokah-v2/index.php(34): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-29 14:18:05 --> Column count doesn't match value count at row 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO deposito_muqayyadah_mudharabahs (proyek, name, phone, email) VALUES(\'Reihan Agam\', \'089670558381\', \'reihanagam7@gmail.com\') ', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO deposito_muqayyadah_mudharabahs (proyek, name, phone, email) VALUES(\'Reihan Agam\', \'089670558381\', \'reihanagam7@gmail.com\') ')
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO deposito_muqayyadah_mudharabahs (proyek, name, phone, email) VALUES(\'Reihan Agam\', \'089670558381\', \'reihanagam7@gmail.com\') ')
+ 4 APPPATH/Controllers/Home/Home.php(36): CodeIgniter\Database\BaseConnection->query('INSERT INTO deposito_muqayyadah_mudharabahs (proyek, name, phone, email) VALUES(\'Reihan Agam\', \'089670558381\', \'reihanagam7@gmail.com\') ')
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home\Home->register()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(34): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-29 14:22:56 --> Undefined variable: fullname
+in APPPATH/Controllers/Home/Home.php on line 50.
+ 1 APPPATH/Controllers/Home/Home.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: fullname', '/Applications/MAMP/htdocs/albarokah-v2/app/Controllers/Home/Home.php', 50, [])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home\Home->depositoTabungan()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(34): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-29 14:25:34 --> syntax error, unexpected end of file
+in APPPATH/Views/cms/deposito-tabungan.php on line 81.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('cms/deposito-tabungan', [], true)
+ 3 APPPATH/Controllers/Home/Home.php(54): view('cms/deposito-tabungan', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home\Home->depositoTabungan()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(34): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-29 14:25:42 --> syntax error, unexpected end of file
+in APPPATH/Views/cms/deposito-tabungan.php on line 81.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('cms/deposito-tabungan', [], true)
+ 3 APPPATH/Controllers/Home/Home.php(54): view('cms/deposito-tabungan', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home\Home->depositoTabungan()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(34): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-29 14:26:14 --> Undefined property: stdClass::$nama
+in APPPATH/Views/cms/deposito-tabungan.php on line 48.
+ 1 APPPATH/Views/cms/deposito-tabungan.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$nama', '/Applications/MAMP/htdocs/albarokah-v2/app/Views/cms/deposito-tabungan.php', 48, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('/Applications/MAMP/htdocs/albarokah-v2/app/Views/cms/deposito-tabungan.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('cms/deposito-tabungan', [], true)
+ 5 APPPATH/Controllers/Home/Home.php(54): view('cms/deposito-tabungan', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home\Home->depositoTabungan()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(34): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-29 14:26:15 --> Undefined property: stdClass::$nama
+in APPPATH/Views/cms/deposito-tabungan.php on line 48.
+ 1 APPPATH/Views/cms/deposito-tabungan.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$nama', '/Applications/MAMP/htdocs/albarokah-v2/app/Views/cms/deposito-tabungan.php', 48, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('/Applications/MAMP/htdocs/albarokah-v2/app/Views/cms/deposito-tabungan.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('cms/deposito-tabungan', [], true)
+ 5 APPPATH/Controllers/Home/Home.php(54): view('cms/deposito-tabungan', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home\Home->depositoTabungan()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(34): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-29 14:28:56 --> Undefined property: stdClass::$produk_pembiayaan
+in APPPATH/Views/cms/deposito-pembiayaan.php on line 47.
+ 1 APPPATH/Views/cms/deposito-pembiayaan.php(47): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$produk_pembiayaan', '/Applications/MAMP/htdocs/albarokah-v2/app/Views/cms/deposito-pembiayaan.php', 47, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('/Applications/MAMP/htdocs/albarokah-v2/app/Views/cms/deposito-pembiayaan.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('cms/deposito-pembiayaan', [], true)
+ 5 APPPATH/Controllers/Home/Home.php(63): view('cms/deposito-pembiayaan', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home\Home->depositoPembiayaan()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(34): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-29 14:29:13 --> mysqli_sql_exception: Table 'albarokah.deposito_pembiayaan' doesn't exist in /Applications/MAMP/htdocs/albarokah-v2/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /Applications/MAMP/htdocs/albarokah-v2/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT * FROM d...', 0)
+#1 /Applications/MAMP/htdocs/albarokah-v2/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM d...')
+#2 /Applications/MAMP/htdocs/albarokah-v2/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM d...')
+#3 /Applications/MAMP/htdocs/albarokah-v2/app/Controllers/Home/Home.php(59): CodeIgniter\Database\BaseConnection->query('SELECT * FROM d...')
+#4 /Applications/MAMP/htdocs/albarokah-v2/system/CodeIgniter.php(934): App\Controllers\Home\Home->depositoPembiayaan()
+#5 /Applications/MAMP/htdocs/albarokah-v2/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\Home))
+#6 /Applications/MAMP/htdocs/albarokah-v2/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/albarokah-v2/index.php(34): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-29 14:29:13 --> Table 'albarokah.deposito_pembiayaan' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT * FROM deposito_pembiayaan', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM deposito_pembiayaan')
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM deposito_pembiayaan')
+ 4 APPPATH/Controllers/Home/Home.php(59): CodeIgniter\Database\BaseConnection->query('SELECT * FROM deposito_pembiayaan')
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home\Home->depositoPembiayaan()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(34): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-29 14:29:14 --> mysqli_sql_exception: Table 'albarokah.deposito_pembiayaan' doesn't exist in /Applications/MAMP/htdocs/albarokah-v2/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /Applications/MAMP/htdocs/albarokah-v2/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT * FROM d...', 0)
+#1 /Applications/MAMP/htdocs/albarokah-v2/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM d...')
+#2 /Applications/MAMP/htdocs/albarokah-v2/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM d...')
+#3 /Applications/MAMP/htdocs/albarokah-v2/app/Controllers/Home/Home.php(59): CodeIgniter\Database\BaseConnection->query('SELECT * FROM d...')
+#4 /Applications/MAMP/htdocs/albarokah-v2/system/CodeIgniter.php(934): App\Controllers\Home\Home->depositoPembiayaan()
+#5 /Applications/MAMP/htdocs/albarokah-v2/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\Home))
+#6 /Applications/MAMP/htdocs/albarokah-v2/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/albarokah-v2/index.php(34): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-29 14:29:14 --> Table 'albarokah.deposito_pembiayaan' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT * FROM deposito_pembiayaan', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM deposito_pembiayaan')
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM deposito_pembiayaan')
+ 4 APPPATH/Controllers/Home/Home.php(59): CodeIgniter\Database\BaseConnection->query('SELECT * FROM deposito_pembiayaan')
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home\Home->depositoPembiayaan()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(34): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-29 14:37:55 --> "isLoggedIn" filter must have a matching alias defined.
+in SYSTEMPATH/Filters/Filters.php on line 493.
+ 1 SYSTEMPATH/Filters/Filters.php(493): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('isLoggedIn')
+ 2 SYSTEMPATH/Filters/Filters.php(243): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH/Filters/Filters.php(163): CodeIgniter\Filters\Filters->initialize('/cms/deposito-mutlaqah')
+ 4 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('/cms/deposito-mutlaqah', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(34): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-29 14:38:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-29 14:38:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-29 14:39:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-29 14:44:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-29 14:49:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-29 14:51:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-29 14:54:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-29 14:54:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-29 14:54:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-29 14:54:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-29 14:54:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-29 14:54:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-29 14:54:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-29 14:54:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-29 14:54:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-29 14:54:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-29 14:57:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-29 14:57:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-29 14:57:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-29 14:57:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-29 14:57:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-29 14:57:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-29 14:57:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-29 14:57:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-29 14:57:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-29 14:57:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-29 14:57:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-29 14:57:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-29 14:57:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-29 14:57:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-29 14:57:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

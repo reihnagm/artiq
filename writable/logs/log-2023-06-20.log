@@ -1,0 +1,9 @@
+CRITICAL - 2023-06-20 14:02:35 --> syntax error, unexpected '?>'
+in APPPATH/Views/daftar/index.php on line 88.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('daftar/index', [], true)
+ 3 APPPATH/Controllers/Home/Home.php(48): view('daftar/index', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home\Home->registerTabungan()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(34): CodeIgniter\CodeIgniter->run()
